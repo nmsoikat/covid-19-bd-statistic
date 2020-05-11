@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 statistics</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/litera/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="mb-2">Bangladesh corona statistic</h2>
+          <span class="bg-light mb-2" id="date"><b>Date:</b></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card card-body bg-warning">
+            <h5 class="text-white">New Cases</h5>
+            <p class="lead text-white font-weight-bold" id="new-cases"></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card-body bg-danger">
+            <h5 class="text-white">New Death</h5>
+            <p class="lead text-white font-weight-bold" id="new-death"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <p class="lead">From  8 March, 2020</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card card-body bg-secondary">
+            <h5 class="text-white">Total Cases:</h5>
+            <p class="lead text-white font-weight-bold" id="total-cases"></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card-body bg-success">
+            <h5 class="text-white">Total recovered</h5>
+            <p class="lead text-white font-weight-bold" id="new-recovered"></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card-body bg-info">
+            <h5 class="text-white">Total tests</h5>
+            <p class="lead text-white font-weight-bold" id="total-test"></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card-body bg-danger mt-2">
+            <h5 class="text-white">Total Death</h5>
+            <p class="lead text-white font-weight-bold" id="total-death"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./covid-api.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
